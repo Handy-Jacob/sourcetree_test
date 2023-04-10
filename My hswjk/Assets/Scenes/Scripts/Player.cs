@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public enum OffDay
+    {
+        Mon,
+        Tue
+    }
+
     public float speed;
 
     private void Awake()
@@ -22,10 +28,9 @@ public class Player : MonoBehaviour
         Debug.Log("Start test");
     }
 
-    // Update is called once per frame
     void Update()
     {
-        Debug.Log("Update");
+        //Debug.Log("Update");
         transform.Rotate(new Vector3(10, 20, 11) * Time.deltaTime * speed);
     }
 }
