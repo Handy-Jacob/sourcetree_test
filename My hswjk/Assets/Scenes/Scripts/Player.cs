@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public float speed;
+
     private void Awake()
     {
         Debug.Log("Awake test");
+        Debug.Log("source tree");
     }
 
     private void OnEnable()
@@ -22,6 +25,6 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.Rotate(new Vector3(10, 20, 11) * Time.deltaTime * speed);
     }
 }
