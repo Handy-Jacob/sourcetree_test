@@ -7,7 +7,8 @@ public class Player : MonoBehaviour
     public enum OffDay
     {
         Mon,
-        Tue
+        Tue,
+        Wed // alpha
     }
 
     public float speed;
