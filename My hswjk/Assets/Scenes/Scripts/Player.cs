@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     {
         Mon,
         Tue,
+        Wed, // alpha
         Thu // beta
     }
 
